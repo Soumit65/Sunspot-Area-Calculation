@@ -1,1 +1,20 @@
+# Bradley–Roth Adaptive Thresholding
+
+This repository implements the Bradley–Roth adaptive thresholding
+algorithm for images with non-uniform illumination.
+
+## Algorithm
+For each pixel, a local mean is computed using an integral image.
+The pixel is classified as foreground if its intensity exceeds
+a fraction of the local mean.
+
+## Advantages
+- Fast (O(N))
+- Robust to illumination gradients
+- Suitable for real-time applications
+
+## Requirements
+pip install -r requirements.txt
+
+
 
